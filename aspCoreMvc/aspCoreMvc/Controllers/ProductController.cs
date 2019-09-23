@@ -51,5 +51,11 @@ namespace aspCoreMvc.Controllers
 
             return View(products.Take(_productCount));
         }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View("Update");
+        }
     }
 }

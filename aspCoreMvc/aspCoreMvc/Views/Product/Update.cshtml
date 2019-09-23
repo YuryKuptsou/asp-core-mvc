@@ -1,0 +1,39 @@
+﻿@model Product
+
+
+<form asp-action="Create">
+    <div>
+        <div>
+            <label asp-for="ProductName"></label>
+            <input type="text" asp-for="ProductName" />
+        </div>
+        <div>
+            <label asp-for="QuantityPerUnit"></label>
+            <input type="text" asp-for="QuantityPerUnit" />
+        </div>
+        <div>
+            <label asp-for="UnitPrice"></label>
+            <input type="text" asp-for="UnitPrice" />
+        </div>
+        <div>
+            <label asp-for="UnitsInStock"></label>
+            <input type="text" asp-for="UnitsInStock" />
+        </div>
+        <div>
+            <label asp-for="UnitsOnOrder"></label>
+            <input type="text" asp-for="UnitsOnOrder" />
+        </div>
+        <div>
+            <label asp-for="ReorderLevel"></label>
+            <input type="text" asp-for="ReorderLevel" />
+        </div>
+        <div>
+            <label asp-for="Discontinued"></label>
+            <input type="checkbox" asp-for="ProductName" />
+        </div>
+    </div>
+    <div>
+        <input type="submit" value="Save" />
+    </div>
+
+</form>
