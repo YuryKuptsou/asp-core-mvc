@@ -5,16 +5,23 @@ using System.Threading.Tasks;
 using aspCoreMvc.Infrastructure;
 using aspCoreMvc.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace aspCoreMvc.Controllers
 {
     public class ProductController : Controller
     {
-        private NorthwindContext _dbContext;
+        private readonly NorthwindContext _dbContext;
+        private readonly int _productCount;
 
-        public ProductController(NorthwindContext dbContext)
+        public ProductController(NorthwindContext dbContext, IConfiguration configuration)
         {
             _dbContext = dbContext;
+            if (!int.TryParse(configuration["ProductCount"], out _productCount))
+            {
+                _productCount = 0;
+            }
+            
         }
 
         public IActionResult Index()
@@ -36,8 +43,13 @@ namespace aspCoreMvc.Controllers
                                CompanyName = supplier.CompanyName,
                                CategoryName = category.CategoryName
                            };
+            if (_productCount == 0)
+            {
+                return View(products);
+            }
 
-            return View(products);
+
+            return View(products.Take(_productCount));
         }
     }
 }

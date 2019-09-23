@@ -9,7 +9,7 @@ namespace aspCoreMvc.Controllers
 {
     public class CategoryController : Controller
     {
-        private NorthwindContext _dbContext;
+        private readonly NorthwindContext _dbContext;
 
         public CategoryController(NorthwindContext dbContext)
         {
