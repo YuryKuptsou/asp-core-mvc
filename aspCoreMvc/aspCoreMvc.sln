@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspCoreMvc", "aspCoreMvc\aspCoreMvc.csproj", "{28FBC55F-72FD-4F22-8CD2-27F6B27DAD13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspCoreMvc", "aspCoreMvc\aspCoreMvc.csproj", "{28FBC55F-72FD-4F22-8CD2-27F6B27DAD13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
