@@ -1,11 +1,20 @@
-﻿@model Product
+﻿@model ProductViewModel
 
 
 <form asp-action="Create">
     <div>
+        <input type="hidden" asp-for="Id"/>
         <div>
             <label asp-for="ProductName"></label>
             <input type="text" asp-for="ProductName" />
+        </div>
+        <div>
+            <label asp-for="CategoryId"></label>
+            <select asp-for="CategoryId" asp-items="Model.Categories"></select>
+        </div>
+        <div>
+            <label asp-for="SupplierId"></label>
+            <select asp-for="SupplierId" asp-items="Model.Suppliers"></select>
         </div>
         <div>
             <label asp-for="QuantityPerUnit"></label>

@@ -1,4 +1,4 @@
-﻿@model IQueryable<Product>
+﻿@model IEnumerable<ProductViewModel>
 
 <a asp-action="Create">Create</a>
 <table>
@@ -18,7 +18,7 @@
     <tr>
         <td>@product.ProductName</td>
         <td>@product.CompanyName</td>
-        <td>@product.CompanyName</td>
+        <td>@product.CategoryName</td>
         <td>@product.QuantityPerUnit</td>
         <td>@product.UnitPrice</td>
         <td>@product.UnitsInStock</td>
