@@ -38,6 +38,8 @@ namespace aspCoreMvc
                 app.UseDeveloperExceptionPage();
             }
 
+
+            app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }
     }

@@ -1,9 +1,11 @@
 ﻿
 @model IEnumerable<string>
 
-<ul>
-    @foreach (var item in Model)
-    {
-        <li>@item</li>
-    }
-</ul>
+<div class="container my-2">
+    <ul class="list-group">
+        @foreach (var item in Model)
+        {
+            <li class="list-group-item">@item</li>
+        }
+    </ul>
+</div>
