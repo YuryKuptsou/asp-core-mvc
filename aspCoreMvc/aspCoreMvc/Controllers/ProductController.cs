@@ -56,26 +56,48 @@ namespace aspCoreMvc.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            var product = new ProductViewModel
+            var model = new ProductViewModel
             {
                 Categories = GetCategories(),
                 Suppliers = GetSuppliers()
             };
 
-            return View("Update", product);
+            return View("Update", model);
+        }
+
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            var model = MapProductVM(_dbContext.Products.Find(id));
+            model.Suppliers = GetSuppliers();
+            model.Categories = GetCategories();
+
+            return View(model);
         }
 
         [HttpPost]
-        public IActionResult Update(ProductViewModel model)
+        public async Task<IActionResult> Update(ProductViewModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                model.Categories = GetCategories();
+                model.Suppliers = GetSuppliers();
+
+                return View(model);
+            }
+
+
             if (model.Id == 0)
             {
-                _dbContext.Products.Add()
+                _dbContext.Products.Add(MapProduct(model));
             }
             else
             {
-
+                _dbContext.Products.Update(MapProduct(model));
             }
+            await _dbContext.SaveChangesAsync();
+
+            return RedirectToAction("Index");
         }
 
         private IEnumerable<SelectListItem> GetCategories()
@@ -94,6 +116,38 @@ namespace aspCoreMvc.Controllers
             return suppliers;
         }
 
-        private
+        private Product MapProduct(ProductViewModel productViewModel)
+        {
+            return new Product
+            {
+                Id = productViewModel.Id,
+                ProductName = productViewModel.ProductName,
+                QuantityPerUnit = productViewModel.QuantityPerUnit,
+                UnitPrice = productViewModel.UnitPrice,
+                UnitsInStock = productViewModel.UnitsInStock,
+                UnitsOnOrder = productViewModel.UnitsOnOrder,
+                ReorderLevel = productViewModel.ReorderLevel,
+                Discontinued = productViewModel.Discontinued,
+                CategoryId = productViewModel.CategoryId,
+                SupplierId = productViewModel.SupplierId
+            };
+        }
+
+        private ProductViewModel MapProductVM(Product product)
+        {
+            return new ProductViewModel
+            {
+                Id = product.Id,
+                ProductName = product.ProductName,
+                QuantityPerUnit = product.QuantityPerUnit,
+                UnitPrice = product.UnitPrice,
+                UnitsInStock = product.UnitsInStock,
+                UnitsOnOrder = product.UnitsOnOrder,
+                ReorderLevel = product.ReorderLevel,
+                Discontinued = product.Discontinued,
+                CategoryId = product.CategoryId,
+                SupplierId = product.SupplierId,
+            };
+        }
     }
 }

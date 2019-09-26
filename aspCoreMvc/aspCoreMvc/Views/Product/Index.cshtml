@@ -12,6 +12,7 @@
         <th>Units On Order</th>
         <th>Reorder Level</th>
         <th>Discontinued</th>
+        <th></th>
     </tr>
     @foreach (var product in Model)
     {
@@ -25,6 +26,7 @@
         <td>@product.UnitsOnOrder</td>
         <td>@product.ReorderLevel</td>
         <td>@product.Discontinued</td>
+        <td><a asp-action="Update" asp-route-id="@product.Id">Edit</a></td>
     </tr>
     }
 </table>
