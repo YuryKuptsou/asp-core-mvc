@@ -61,6 +61,7 @@ namespace aspCoreMvc.Controllers
                 Categories = GetCategories(),
                 Suppliers = GetSuppliers()
             };
+            ViewBag.Caption = "Create product";
 
             return View("Update", model);
         }
@@ -71,6 +72,7 @@ namespace aspCoreMvc.Controllers
             var model = MapProductVM(_dbContext.Products.Find(id));
             model.Suppliers = GetSuppliers();
             model.Categories = GetCategories();
+            ViewBag.Caption = "Update product";
 
             return View(model);
         }

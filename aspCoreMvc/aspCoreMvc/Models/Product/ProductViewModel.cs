@@ -27,6 +27,7 @@ namespace aspCoreMvc.Models
 
         [Range(0, 10000)]
         [DisplayName("Units in stock")]
+        //[DisplayFormat(DataFormatString =)]
         public short UnitsInStock { get; set; }
 
         [Range(0, 10000)]
