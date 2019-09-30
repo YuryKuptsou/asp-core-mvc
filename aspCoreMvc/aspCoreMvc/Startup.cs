@@ -41,12 +41,18 @@ namespace aspCoreMvc
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            env.EnvironmentName = EnvironmentName.Production;
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+            }
 
-
+            
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
         }
