@@ -7,6 +7,7 @@ using aspCoreMvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace aspCoreMvc.Controllers
 {
@@ -15,13 +16,14 @@ namespace aspCoreMvc.Controllers
         private readonly NorthwindContext _dbContext;
         private readonly int _productCount;
 
-        public ProductController(NorthwindContext dbContext, IConfiguration configuration)
+        public ProductController(NorthwindContext dbContext, IConfiguration configuration, ILogger<ProductController> logger)
         {
             _dbContext = dbContext;
             if (!int.TryParse(configuration["ProductCount"], out _productCount))
             {
                 _productCount = 0;
             }
+            logger.LogInformation("Read max product count: {count}", _productCount);
             
         }
 

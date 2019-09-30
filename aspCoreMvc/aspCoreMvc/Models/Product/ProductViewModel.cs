@@ -23,11 +23,11 @@ namespace aspCoreMvc.Models
 
         [Range(0.01, 10000)]
         [DisplayName("Unit price")]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:C6}")]
         public decimal UnitPrice { get; set; }
 
         [Range(0, 10000)]
         [DisplayName("Units in stock")]
-        //[DisplayFormat(DataFormatString =)]
         public short UnitsInStock { get; set; }
 
         [Range(0, 10000)]
