@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aspCoreMvc", "aspCoreMvc\aspCoreMvc.csproj", "{28FBC55F-72FD-4F22-8CD2-27F6B27DAD13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unitTests", "unitTests\unitTests.csproj", "{CFB9087F-E161-4502-82C4-E0B1C4BEA4A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{28FBC55F-72FD-4F22-8CD2-27F6B27DAD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28FBC55F-72FD-4F22-8CD2-27F6B27DAD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28FBC55F-72FD-4F22-8CD2-27F6B27DAD13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB9087F-E161-4502-82C4-E0B1C4BEA4A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB9087F-E161-4502-82C4-E0B1C4BEA4A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB9087F-E161-4502-82C4-E0B1C4BEA4A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB9087F-E161-4502-82C4-E0B1C4BEA4A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

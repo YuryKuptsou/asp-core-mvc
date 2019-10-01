@@ -3,56 +3,42 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using aspCoreMvc.Infrastructure;
+using aspCoreMvc.Infrastructure.Interfaces;
+using aspCoreMvc.Infrastructure.Options;
 using aspCoreMvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 
 namespace aspCoreMvc.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly NorthwindContext _dbContext;
-        private readonly int _productCount;
+        private readonly IProductService _productService;
+        private readonly ISupplierService _supplierService;
+        private readonly ICategoryService _categoryService;
+        private readonly ProductOptions _options;
+        private readonly ILogger<ProductController> _logger;
 
-        public ProductController(NorthwindContext dbContext, IConfiguration configuration, ILogger<ProductController> logger)
+        public ProductController(IProductService productService, ISupplierService supplierService, ICategoryService categoryService,
+            IOptionsSnapshot<ProductOptions> options, ILogger<ProductController> logger)
         {
-            _dbContext = dbContext;
-            if (!int.TryParse(configuration["ProductCount"], out _productCount))
-            {
-                _productCount = 0;
-            }
-            logger.LogInformation("Read max product count: {count}", _productCount);
+            _productService = productService;
+            _supplierService = supplierService;
+            _categoryService = categoryService;
+            _options = options.Value;
+            _logger = logger;
             
         }
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Read max product count: {count}", _options.ProductCount);
+            var products = _productService.GetAll(_options.ProductCount);
 
-            var products = from product in _dbContext.Products
-                           join supplier in _dbContext.Suppliers on product.SupplierId equals supplier.Id
-                           join category in _dbContext.Categories on product.CategoryId equals category.Id
-                           select new ProductViewModel
-                           {
-                               Id = product.Id,
-                               ProductName = product.ProductName,
-                               QuantityPerUnit = product.QuantityPerUnit,
-                               UnitPrice = product.UnitPrice,
-                               UnitsInStock = product.UnitsInStock,
-                               UnitsOnOrder = product.UnitsOnOrder,
-                               ReorderLevel = product.ReorderLevel,
-                               Discontinued = product.Discontinued,
-                               CompanyName = supplier.CompanyName,
-                               CategoryName = category.CategoryName
-                           };
-            if (_productCount == 0)
-            {
-                return View(products);
-            }
-
-
-            return View(products.Take(_productCount));
+            return View(products);
         }
 
         [HttpGet]
@@ -71,7 +57,7 @@ namespace aspCoreMvc.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            var model = MapProductVM(_dbContext.Products.Find(id));
+            var model = MapProductVM(_productService.Get(id));
             model.Suppliers = GetSuppliers();
             model.Categories = GetCategories();
             ViewBag.Caption = "Update product";
@@ -80,7 +66,7 @@ namespace aspCoreMvc.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(ProductViewModel model)
+        public IActionResult Update(ProductViewModel model)
         {
             if (!ModelState.IsValid)
             {
@@ -90,23 +76,21 @@ namespace aspCoreMvc.Controllers
                 return View(model);
             }
 
-
             if (model.Id == 0)
             {
-                _dbContext.Products.Add(MapProduct(model));
+                _productService.Create(MapProduct(model));
             }
             else
             {
-                _dbContext.Products.Update(MapProduct(model));
+                _productService.Update(MapProduct(model));
             }
-            await _dbContext.SaveChangesAsync();
 
             return RedirectToAction("Index");
         }
 
         private IEnumerable<SelectListItem> GetCategories()
         {
-            var categories = _dbContext.Categories.Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.CategoryName }).ToList();
+            var categories =  _categoryService.GetAll().Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.CategoryName }).ToList();
             categories.Insert(0, new SelectListItem { Value = "0", Text = "Select category" });
 
             return categories;
@@ -114,7 +98,7 @@ namespace aspCoreMvc.Controllers
 
         private IEnumerable<SelectListItem> GetSuppliers()
         {
-            var suppliers = _dbContext.Suppliers.Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.CompanyName }).ToList();
+            var suppliers = _supplierService.GetAll().Select(s => new SelectListItem { Value = s.Id.ToString(), Text = s.CompanyName }).ToList();
             suppliers.Insert(0, new SelectListItem { Value = "0", Text = "Select supplier" });
 
             return suppliers;

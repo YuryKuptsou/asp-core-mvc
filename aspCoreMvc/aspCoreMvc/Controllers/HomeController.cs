@@ -10,9 +10,6 @@ namespace aspCoreMvc.Controllers
     {
         public IActionResult Index()
         {
-            var i = 0;
-            var s = 3 / i;
-
             return View();
         }
     }

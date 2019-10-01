@@ -5,6 +5,9 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using aspCoreMvc.Infrastructure;
+using aspCoreMvc.Infrastructure.Interfaces;
+using aspCoreMvc.Infrastructure.Options;
+using aspCoreMvc.Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -34,6 +37,13 @@ namespace aspCoreMvc
             _logger.LogInformation("Read default connection string: {connString}", connstring);
             services.AddDbContext<NorthwindContext>(options =>
                 options.UseSqlServer(connstring));
+
+            services.AddOptions();
+            services.Configure<ProductOptions>(Configuration);
+
+            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<ISupplierService, SupplierService>();
+            services.AddTransient<IProductService, ProductService>();
 
             services.AddMvc();
         }
