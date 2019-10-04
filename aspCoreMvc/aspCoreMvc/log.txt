@@ -1,0 +1,323 @@
+2019-10-04 14:15:26.113 +03:00 [INF] Read default connection string: Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True
+2019-10-04 14:15:26.671 +03:00 [INF] Start application, location: D:\asp-core-mvc\aspCoreMvc\aspCoreMvc
+2019-10-04 14:15:26.758 +03:00 [INF] User profile is available. Using 'C:\Users\Yury_Kuptsou1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-04 14:15:27.960 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2019-10-04 14:15:28.168 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller aspCoreMvc.Controllers.HomeController (aspCoreMvc).
+2019-10-04 14:15:28.205 +03:00 [INF] Executing action method aspCoreMvc.Controllers.HomeController.Index (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:28.217 +03:00 [INF] Executed action method aspCoreMvc.Controllers.HomeController.Index (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.617ms.
+2019-10-04 14:15:28.248 +03:00 [INF] Executing ViewResult, running view Index.
+2019-10-04 14:15:28.412 +03:00 [INF] Executed ViewResult - view Index executed in 182.35840000000002ms.
+2019-10-04 14:15:28.415 +03:00 [INF] Executed action aspCoreMvc.Controllers.HomeController.Index (aspCoreMvc) in 221.1344ms
+2019-10-04 14:15:28.428 +03:00 [INF] Request finished in 470.4545ms 200 text/html; charset=utf-8
+2019-10-04 14:15:28.431 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+2019-10-04 14:15:28.443 +03:00 [INF] The file /css/site.css was not modified
+2019-10-04 14:15:28.448 +03:00 [INF] Request finished in 16.4279ms 304 text/css
+2019-10-04 14:15:29.616 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category  
+2019-10-04 14:15:29.624 +03:00 [INF] Route matched with {action = "Index", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:15:29.877 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Index (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:29.967 +03:00 [WRN] No type was specified for the decimal column 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2019-10-04 14:15:30.023 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:15:33.372 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+2019-10-04 14:15:33.384 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Index (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3504.8256ms.
+2019-10-04 14:15:33.389 +03:00 [INF] Executing ViewResult, running view Index.
+2019-10-04 14:15:33.401 +03:00 [INF] Executed ViewResult - view Index executed in 13.969800000000001ms.
+2019-10-04 14:15:33.405 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Index (aspCoreMvc) in 3777.9419000000003ms
+2019-10-04 14:15:33.408 +03:00 [INF] Request finished in 3792.083ms 200 text/html; charset=utf-8
+2019-10-04 14:15:33.422 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/1  
+2019-10-04 14:15:33.424 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/2  
+2019-10-04 14:15:33.429 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/3  
+2019-10-04 14:15:33.432 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/4  
+2019-10-04 14:15:33.436 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/5  
+2019-10-04 14:15:33.438 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/6  
+2019-10-04 14:15:33.456 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:15:33.458 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:15:33.458 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:15:33.458 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:15:33.458 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:15:33.458 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:15:33.492 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:33.492 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:33.492 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:33.492 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:33.492 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:33.494 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:33.508 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:15:33.511 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:15:33.516 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:15:33.527 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:15:33.531 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:15:33.544 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:15:33.589 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:15:33.589 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:15:33.589 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:15:33.591 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:15:33.591 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:15:33.612 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:15:33.687 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 184.73250000000002ms.
+2019-10-04 14:15:33.687 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 157.0859ms.
+2019-10-04 14:15:33.687 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 176.5928ms.
+2019-10-04 14:15:33.687 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 172.2012ms.
+2019-10-04 14:15:33.687 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 160.856ms.
+2019-10-04 14:15:33.687 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 143.3475ms.
+2019-10-04 14:15:33.699 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:15:33.702 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:15:33.705 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:15:33.712 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 243.60150000000002ms
+2019-10-04 14:15:33.717 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:15:33.723 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 245.2979ms
+2019-10-04 14:15:33.730 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 256.4374ms
+2019-10-04 14:15:33.734 +03:00 [INF] Request finished in 311.547ms 200 image/jpeg
+2019-10-04 14:15:33.740 +03:00 [INF] Request finished in 303.7735ms 200 image/jpeg
+2019-10-04 14:15:33.743 +03:00 [INF] Request finished in 311.2125ms 200 image/jpeg
+2019-10-04 14:15:33.745 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/7  
+2019-10-04 14:15:33.747 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/8  
+2019-10-04 14:15:33.753 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:15:33.758 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:15:33.762 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:15:33.768 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:33.773 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:33.777 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:15:33.785 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:15:33.789 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 306.84630000000004ms
+2019-10-04 14:15:33.791 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:15:33.795 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:15:33.803 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 25.5592ms.
+2019-10-04 14:15:33.809 +03:00 [INF] Request finished in 385.6263ms 200 image/jpeg
+2019-10-04 14:15:33.810 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 25.3564ms.
+2019-10-04 14:15:33.814 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 326.7812ms
+2019-10-04 14:15:33.819 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:15:33.823 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:15:33.827 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 59.7946ms
+2019-10-04 14:15:33.832 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:15:33.837 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 63.343900000000005ms
+2019-10-04 14:15:33.841 +03:00 [INF] Request finished in 95.272ms 200 image/jpeg
+2019-10-04 14:15:33.843 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 351.5102ms
+2019-10-04 14:15:33.846 +03:00 [INF] Request finished in 99.2091ms 200 image/jpeg
+2019-10-04 14:15:33.853 +03:00 [INF] Request finished in 414.3598ms 200 image/jpeg
+2019-10-04 14:15:33.856 +03:00 [INF] Request finished in 427.0881ms 200 image/jpeg
+2019-10-04 14:15:39.640 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Update/1  
+2019-10-04 14:15:39.646 +03:00 [INF] Route matched with {action = "Update", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:15:39.654 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:39.658 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:15:39.662 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:15:39.675 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 17.844ms.
+2019-10-04 14:15:39.682 +03:00 [INF] Executing ViewResult, running view Update.
+2019-10-04 14:15:39.729 +03:00 [INF] Executed ViewResult - view Update executed in 49.952600000000004ms.
+2019-10-04 14:15:39.735 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) in 81.10090000000001ms
+2019-10-04 14:15:39.738 +03:00 [INF] Request finished in 98.5727ms 200 text/html; charset=utf-8
+2019-10-04 14:15:59.154 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Category/Update/1 multipart/form-data; boundary=----WebKitFormBoundary0JBDx5f5trxv0Mcu 1080
+2019-10-04 14:15:59.163 +03:00 [INF] Route matched with {action = "Update", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(aspCoreMvc.Models.CategoryViewModel) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:15:59.205 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:15:59.211 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.8513000000000002ms.
+2019-10-04 14:15:59.215 +03:00 [INF] Executing ViewResult, running view Update.
+2019-10-04 14:15:59.220 +03:00 [INF] Executed ViewResult - view Update executed in 5.5202ms.
+2019-10-04 14:15:59.223 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) in 54.0739ms
+2019-10-04 14:15:59.228 +03:00 [INF] Request finished in 74.1754ms 200 text/html; charset=utf-8
+2019-10-04 14:16:11.724 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Category/Update/1 multipart/form-data; boundary=----WebKitFormBoundarykjkMTZmKrNVV1T6J 1080
+2019-10-04 14:16:11.741 +03:00 [INF] Route matched with {action = "Update", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(aspCoreMvc.Models.CategoryViewModel) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:16:11.747 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:16:11.751 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0476ms.
+2019-10-04 14:16:11.756 +03:00 [INF] Executing ViewResult, running view Update.
+2019-10-04 14:16:11.762 +03:00 [INF] Executed ViewResult - view Update executed in 5.9478ms.
+2019-10-04 14:16:11.765 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) in 18.9102ms
+2019-10-04 14:16:11.770 +03:00 [INF] Request finished in 45.3593ms 200 text/html; charset=utf-8
+2019-10-04 14:17:03.625 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Category/Update/1 multipart/form-data; boundary=----WebKitFormBoundarynme3LUcNcDY775Yg 1080
+2019-10-04 14:17:03.629 +03:00 [INF] Route matched with {action = "Update", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(aspCoreMvc.Models.CategoryViewModel) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:17:03.634 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:17:05.187 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1548.7681ms.
+2019-10-04 14:17:05.192 +03:00 [INF] Executing ViewResult, running view Update.
+2019-10-04 14:17:05.195 +03:00 [INF] Executed ViewResult - view Update executed in 3.4659ms.
+2019-10-04 14:17:05.198 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) in 1564.5378ms
+2019-10-04 14:17:05.202 +03:00 [INF] Request finished in 1576.7437ms 200 text/html; charset=utf-8
+2019-10-04 14:17:15.382 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Category/Update/1 multipart/form-data; boundary=----WebKitFormBoundarySRMBHAAqc3PtOTKS 1080
+2019-10-04 14:17:15.386 +03:00 [INF] Route matched with {action = "Update", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(aspCoreMvc.Models.CategoryViewModel) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:17:15.390 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:17:24.323 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8929.1149ms.
+2019-10-04 14:17:24.361 +03:00 [INF] Executing ViewResult, running view Update.
+2019-10-04 14:17:24.727 +03:00 [INF] Executed ViewResult - view Update executed in 400.24530000000004ms.
+2019-10-04 14:17:24.731 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) in 9341.4351ms
+2019-10-04 14:17:24.735 +03:00 [INF] Request finished in 9353.7191ms 200 text/html; charset=utf-8
+2019-10-04 14:17:48.142 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Category/Update/1 multipart/form-data; boundary=----WebKitFormBoundarybBmUVQNlulV5RH9S 1080
+2019-10-04 14:17:48.147 +03:00 [INF] Route matched with {action = "Update", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(aspCoreMvc.Models.CategoryViewModel) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:17:48.151 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:17:48.158 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.058300000000000005ms.
+2019-10-04 14:17:48.162 +03:00 [INF] Executing ViewResult, running view Update.
+2019-10-04 14:17:48.166 +03:00 [INF] Executed ViewResult - view Update executed in 4.1255000000000006ms.
+2019-10-04 14:17:48.169 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Update (aspCoreMvc) in 18.346500000000002ms
+2019-10-04 14:17:48.172 +03:00 [INF] Request finished in 30.0202ms 200 text/html; charset=utf-8
+2019-10-04 14:23:11.538 +03:00 [INF] Read default connection string: Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True
+2019-10-04 14:23:11.958 +03:00 [INF] Start application, location: D:\asp-core-mvc\aspCoreMvc\aspCoreMvc
+2019-10-04 14:23:12.043 +03:00 [INF] User profile is available. Using 'C:\Users\Yury_Kuptsou1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-10-04 14:23:12.911 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2019-10-04 14:23:13.119 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller aspCoreMvc.Controllers.HomeController (aspCoreMvc).
+2019-10-04 14:23:13.133 +03:00 [INF] Executing action method aspCoreMvc.Controllers.HomeController.Index (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:13.144 +03:00 [INF] Executed action method aspCoreMvc.Controllers.HomeController.Index (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.59200000000000008ms.
+2019-10-04 14:23:13.178 +03:00 [INF] Executing ViewResult, running view Index.
+2019-10-04 14:23:13.320 +03:00 [INF] Executed ViewResult - view Index executed in 162.6ms.
+2019-10-04 14:23:13.324 +03:00 [INF] Executed action aspCoreMvc.Controllers.HomeController.Index (aspCoreMvc) in 201.2056ms
+2019-10-04 14:23:13.337 +03:00 [INF] Request finished in 427.6063ms 200 text/html; charset=utf-8
+2019-10-04 14:23:13.340 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css  
+2019-10-04 14:23:13.349 +03:00 [INF] The file /css/site.css was not modified
+2019-10-04 14:23:13.355 +03:00 [INF] Request finished in 14.7986ms 304 text/css
+2019-10-04 14:23:24.001 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/  
+2019-10-04 14:23:24.005 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller aspCoreMvc.Controllers.HomeController (aspCoreMvc).
+2019-10-04 14:23:24.008 +03:00 [INF] Executing action method aspCoreMvc.Controllers.HomeController.Index (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:24.011 +03:00 [INF] Executed action method aspCoreMvc.Controllers.HomeController.Index (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.085100000000000009ms.
+2019-10-04 14:23:24.015 +03:00 [INF] Executing ViewResult, running view Index.
+2019-10-04 14:23:24.019 +03:00 [INF] Executed ViewResult - view Index executed in 3.9246000000000003ms.
+2019-10-04 14:23:24.023 +03:00 [INF] Executed action aspCoreMvc.Controllers.HomeController.Index (aspCoreMvc) in 14.3232ms
+2019-10-04 14:23:24.026 +03:00 [INF] Request finished in 24.7222ms 200 text/html; charset=utf-8
+2019-10-04 14:23:25.104 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Product  
+2019-10-04 14:23:25.109 +03:00 [INF] Route matched with {action = "Index", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller aspCoreMvc.Controllers.ProductController (aspCoreMvc).
+2019-10-04 14:23:25.231 +03:00 [INF] Executing action method aspCoreMvc.Controllers.ProductController.Index (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:25.235 +03:00 [INF] Read max product count: 3
+2019-10-04 14:23:25.325 +03:00 [WRN] No type was specified for the decimal column 'UnitPrice' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+2019-10-04 14:23:25.367 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:23:25.374 +03:00 [INF] Executed action method aspCoreMvc.Controllers.ProductController.Index (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 138.898ms.
+2019-10-04 14:23:25.382 +03:00 [INF] Executing ViewResult, running view Index.
+2019-10-04 14:23:25.431 +03:00 [WRN] Query: '(from Product product in DbSet<Product> join Supplier supplier in DbSet<Supplier> on [product].Suppl...' uses a row limiting operation (Skip/Take) without OrderBy which may lead to unpredictable results.
+2019-10-04 14:23:25.804 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(@__p_0) [product].[ProductID] AS [Id], [product].[ProductName], [product].[QuantityPerUnit], [product].[UnitPrice], [product].[UnitsInStock], [product].[UnitsOnOrder], [product].[ReorderLevel], [product].[Discontinued], [supplier].[CompanyName], [category].[CategoryName]
+FROM [Products] AS [product]
+INNER JOIN [Suppliers] AS [supplier] ON [product].[SupplierId] = [supplier].[SupplierID]
+INNER JOIN [Categories] AS [category] ON [product].[CategoryId] = [category].[CategoryID]
+2019-10-04 14:23:25.823 +03:00 [INF] Executed ViewResult - view Index executed in 445.6139ms.
+2019-10-04 14:23:25.827 +03:00 [INF] Executed action aspCoreMvc.Controllers.ProductController.Index (aspCoreMvc) in 712.967ms
+2019-10-04 14:23:25.832 +03:00 [INF] Request finished in 727.6975ms 200 text/html; charset=utf-8
+2019-10-04 14:23:27.128 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category  
+2019-10-04 14:23:27.133 +03:00 [INF] Route matched with {action = "Index", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:23:27.138 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Index (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:27.147 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:23:27.167 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryName], [c].[Description], [c].[Picture]
+FROM [Categories] AS [c]
+2019-10-04 14:23:27.178 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Index (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.ViewResult in 32.6089ms.
+2019-10-04 14:23:27.184 +03:00 [INF] Executing ViewResult, running view Index.
+2019-10-04 14:23:27.195 +03:00 [INF] Executed ViewResult - view Index executed in 13.4368ms.
+2019-10-04 14:23:27.199 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Index (aspCoreMvc) in 61.8091ms
+2019-10-04 14:23:27.202 +03:00 [INF] Request finished in 73.6422ms 200 text/html; charset=utf-8
+2019-10-04 14:23:27.217 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/1  
+2019-10-04 14:23:27.219 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/2  
+2019-10-04 14:23:27.222 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/3  
+2019-10-04 14:23:27.223 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/5  
+2019-10-04 14:23:27.225 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/4  
+2019-10-04 14:23:27.230 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/6  
+2019-10-04 14:23:27.251 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:23:27.251 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:23:27.252 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:23:27.252 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:23:27.252 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:23:27.253 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:23:27.285 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:27.285 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:27.285 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:27.285 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:27.285 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:27.291 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:27.295 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:23:27.298 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:23:27.300 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:23:27.308 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:23:27.313 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:23:27.322 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:23:27.325 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:23:27.330 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:23:27.333 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:23:27.337 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:23:27.341 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:23:27.346 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:23:27.386 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 85.4264ms.
+2019-10-04 14:23:27.386 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 88.2311ms.
+2019-10-04 14:23:27.386 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 92.3075ms.
+2019-10-04 14:23:27.386 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 78.0828ms.
+2019-10-04 14:23:27.386 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 73.0142ms.
+2019-10-04 14:23:27.386 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 63.498400000000004ms.
+2019-10-04 14:23:27.396 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:23:27.398 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:23:27.401 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:23:27.406 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 139.5015ms
+2019-10-04 14:23:27.406 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 131.791ms
+2019-10-04 14:23:27.412 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:23:27.415 +03:00 [INF] Request finished in 197.9383ms 200 image/jpeg
+2019-10-04 14:23:27.420 +03:00 [INF] Request finished in 191.3876ms 200 image/jpeg
+2019-10-04 14:23:27.423 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 151.739ms
+2019-10-04 14:23:27.430 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/7  
+2019-10-04 14:23:27.434 +03:00 [INF] Request finished in 211.5072ms 200 image/jpeg
+2019-10-04 14:23:27.436 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:23:27.443 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:27.446 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Category/Image/8  
+2019-10-04 14:23:27.450 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:23:27.454 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:23:27.456 +03:00 [INF] Route matched with {action = "Image", controller = "Category"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Image(Int32) on controller aspCoreMvc.Controllers.CategoryController (aspCoreMvc).
+2019-10-04 14:23:27.460 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 176.199ms
+2019-10-04 14:23:27.460 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 179.67190000000002ms
+2019-10-04 14:23:27.468 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:23:27.471 +03:00 [INF] Executing action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) - Validation state: "Valid"
+2019-10-04 14:23:27.474 +03:00 [INF] Request finished in 250.2004ms 200 image/jpeg
+2019-10-04 14:23:27.483 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 28.92ms.
+2019-10-04 14:23:27.486 +03:00 [INF] Entity Framework Core 2.2.6-servicing-10079 initialized 'NorthwindContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2019-10-04 14:23:27.492 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:23:27.498 +03:00 [INF] Request finished in 273.1123ms 200 image/jpeg
+2019-10-04 14:23:27.501 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[CategoryID], [e].[CategoryName], [e].[Description], [e].[Picture]
+FROM [Categories] AS [e]
+WHERE [e].[CategoryID] = @__get_Item_0
+2019-10-04 14:23:27.503 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:23:27.505 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 62.7164ms
+2019-10-04 14:23:27.513 +03:00 [INF] Executed action method aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc), returned result Microsoft.AspNetCore.Mvc.FileStreamResult in 27.3609ms.
+2019-10-04 14:23:27.517 +03:00 [INF] Request finished in 86.6534ms 200 image/jpeg
+2019-10-04 14:23:27.520 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 230.00760000000002ms
+2019-10-04 14:23:27.523 +03:00 [INF] Executing Microsoft.AspNetCore.Mvc.FileStreamResult, sending file with download name '' ...
+2019-10-04 14:23:27.527 +03:00 [INF] Request finished in 308.4091ms 200 image/jpeg
+2019-10-04 14:23:27.532 +03:00 [INF] Executed action aspCoreMvc.Controllers.CategoryController.Image (aspCoreMvc) in 60.5585ms
+2019-10-04 14:23:27.536 +03:00 [INF] Request finished in 90.0289ms 200 image/jpeg

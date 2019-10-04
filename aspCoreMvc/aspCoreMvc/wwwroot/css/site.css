@@ -1,1 +1,7 @@
-﻿
+﻿.validation-summary-errors {
+    color: #dc3545;
+}
+
+.validation-summary-errors li {
+    list-style-type: none;
+}

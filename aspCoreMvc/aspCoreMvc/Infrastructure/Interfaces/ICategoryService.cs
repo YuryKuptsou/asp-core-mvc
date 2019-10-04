@@ -9,5 +9,11 @@ namespace aspCoreMvc.Infrastructure.Interfaces
     {
         IEnumerable<Category> GetAll();
 
+        Category Get(int id);
+
+        byte[] GetImage(int id);
+
+        void Update(Category category);
+
     }
 }

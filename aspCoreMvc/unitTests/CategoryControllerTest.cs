@@ -34,8 +34,8 @@ namespace unitTests
             //Assert
             Assert.That(result, Is.InstanceOf<ViewResult>());
             var viewResult = result as ViewResult;
-            Assert.That(viewResult.ViewData.Model, Is.AssignableTo<IEnumerable<string>>());
-            var model = viewResult.ViewData.Model as IEnumerable<string>;
+            Assert.That(viewResult.ViewData.Model, Is.AssignableTo<IEnumerable<Category>>());
+            var model = viewResult.ViewData.Model as IEnumerable<Category>;
             Assert.That(model, Has.Exactly(GetCatigories().Count()).Items);
 
         }

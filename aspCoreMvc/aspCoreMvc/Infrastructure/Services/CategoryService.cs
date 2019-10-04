@@ -16,9 +16,25 @@ namespace aspCoreMvc.Infrastructure.Services
             _dbContext = dbContext;    
         }
 
+        public Category Get(int id)
+        {
+            return _dbContext.Categories.Find(id);
+        }
+
         public IEnumerable<Category> GetAll()
         {
             return _dbContext.Categories.AsNoTracking().ToList();
+        }
+
+        public byte[] GetImage(int id)
+        {
+            return _dbContext.Categories.Find(id)?.Picture;
+        }
+
+        public void Update(Category category)
+        {
+            _dbContext.Categories.Update(category);
+            _dbContext.SaveChanges();
         }
     }
 }
