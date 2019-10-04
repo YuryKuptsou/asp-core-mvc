@@ -31,9 +31,6 @@ namespace aspCoreMvc
                     .ReadFrom.Configuration(hostingContext.Configuration)
                     .Enrich.FromLogContext()
                     .WriteTo.Debug()
-                    //.WriteTo.File(
-                           
-                    //)
                     .WriteTo.Console(
                         outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] {Message:lj} " +
                                         "{NewLine}{Exception}"));
